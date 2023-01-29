@@ -1,0 +1,42 @@
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.login-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.btnLogin {
+  cursor: pointer;
+}
+
+.register {
+  color: whitesmoke;
+  font-family: monospace;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+.registerBtn {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 250ms;
+}
+
+.registerBtn:hover {
+  color: crimson;
+}

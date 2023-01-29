@@ -1,0 +1,85 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='/users/index.users.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      type='text/css'
+      href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css'
+    />
+
+    <title>Api Ecommerce Products</title>
+  </head>
+  <body>
+    <header>
+      <nav class='navProfile'>
+        <h2 class='userName' data-username={{this.userData.username}} id='username'>Welcome
+          {{this.userData.username}}</h2>
+        <div class='cartContainer'>
+          <img src='/users/assets/cart.svg' alt='cart' width='30px' />
+          <div class='cart' id='qntyCart'></div>
+        </div>
+        <div class='avatarContainer'>
+          <button class='btnOrder' id='btnOrder'>Order</button>
+          <img class='avatar' src='{{this.userData.avatar}}' alt='avatar' />
+          <button class='btnLogout' id='btnLogout'>Logout</button>
+        </div>
+      </nav>
+    </header>
+    <div class='chat'>
+      <div class='messages' id='messages'>
+        <div class='welcomeMessagecontainer'>
+          <p class='welcomeMessageChat'>Aqui inicia el chat</p>
+        </div>
+      </div>
+      <div class='infoUser'>
+        <input type='text' placeholder='Email*' class='emailUser' id='emailUser' />
+        <input type='text' placeholder='type*' class='emailUser' id='type' />
+        <input type='text' placeholder='Message*' class='messageUser' id='messageUser' />
+
+        <div class='btn-percent'>
+          <div class='percentageValue'>
+            Reduction data:
+            <span id='percentageReduction'>0%</span>
+          </div>
+          <button class='btnSendMessage' id='btnSendChatMessage'>Send</button>
+        </div>
+      </div>
+    </div>
+
+    <div id='errorContainer' class='hidden errorContainer'></div>
+    <section id='cards' class='productsContainer'></section>
+    <footer>Hic sunt dracones</footer>
+    <template id='productsTemplate'>
+      <div class='productContainer'>
+        <figure class='card'>
+          <img class='productImg' height='200px' />
+          <figcaption class='productCaption'></figcaption>
+        </figure>
+        <p class='productPrice'></p>
+        <div class='btnsContainer'>
+          <button class='buyButton'>Buy</button>
+          <button class='deleteButton'>Delete</button>
+        </div>
+      </div>
+    </template>
+    <script src='https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.min.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js'
+      integrity='sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    ></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='/users/index.users.js' type='module'></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='/mainApp/index.public.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      type='text/css'
+      href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css'
+    />
+    <title>Api Ecommerce Dashboard</title>
+  </head>
+  <body>
+    <section>
+      <nav class='navProfile'>
+        <h2>Administration panel</h2>
+        <button class='btnLogout' id='btnLogout'>Logout</button>
+      </nav>
+    </section>
+    <section class='formulario'>
+      <form enctype='multipart/form-data' id='form'>
+        <input
+          type='text'
+          placeholder='Product id'
+          name='id'
+          id='productId'
+          disabled
+          class='productId'
+        />
+        <input type='text' placeholder='Product' name='title' id='product' />
+        <input type='text' placeholder='Price' name='price' id='price' />
+        <input type='file' name='image' id='image' hidden />
+        <label for='image' class='labelFileBtn'>Choose File</label>
+        <div class='buttonsDiv'>
+          <button id='postBtn' class='btnPost'>Post</button>
+          <button id='putBtn' class='btnPut'>Update</button>
+          <button id='deleteBtn' class='btnDelete'>Delete</button>
+        </div>
+      </form>
+
+      <div class='chat'>
+        <div class='messages' id='messages'>
+          <div class='welcomeMessagecontainer'>
+            <p class='welcomeMessageChat'>Aqui inicia el chat</p>
+          </div>
+        </div>
+        <div class='infoUser'>
+          <input type='text' placeholder='Email*' class='emailUser' id='emailUser' />
+          <input type='text' placeholder='type*' class='emailUser' id='type' />
+          <input type='text' placeholder='Message*' class='messageUser' id='messageUser' />
+
+          <div class='btn-percent'>
+            <div class='percentageValue'>
+              Reduction data:
+              <span id='percentageReduction'>0%</span>
+            </div>
+            <button class='btnSendMessage' id='btnSendChatMessage'>Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id='errorContainer' class='hidden'></div>
+    <section id='productsContainer' class='productsContainer'></section>
+    <script src='https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.min.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js'
+      integrity='sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    ></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='/mainApp/index.public.js' type='module'></script>
+  </body>
+</html>

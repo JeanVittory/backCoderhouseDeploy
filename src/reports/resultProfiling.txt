@@ -1,0 +1,1215 @@
+Statistical profiling result from node-process-v8.log, (4922 ticks, 6 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     71    1.4%          /usr/lib/system/libsystem_pthread.dylib
+     12    0.2%          /usr/lib/system/libsystem_malloc.dylib
+      6    0.1%          /usr/lib/system/libsystem_platform.dylib
+      1    0.0%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     11    0.2%    0.2%  LazyCompile: *resolve node:path:1091:10
+     10    0.2%    0.2%  LazyCompile: *normalizeString node:path:66:25
+     10    0.2%    0.2%  LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      7    0.1%    0.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:640:37
+      3    0.1%    0.1%  LazyCompile: *realpathSync node:fs:2460:22
+      3    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      3    0.1%    0.1%  Function: ^_addListener node:events:541:22
+      3    0.1%    0.1%  Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      2    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      2    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.0%  LazyCompile: *SendStream /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:96:21
+      2    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      2    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      2    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1    0.0%    0.0%  RegExp: ^\/helloworld\/?$
+      1    0.0%    0.0%  RegExp: ^\/api\/v1\/carrito\/?(?=\/|$)
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^((?:@[^/\\%]+\/)?[^./\\%][^/\\%]*)(\/.*)?$
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  LazyCompile: *syncExports node:internal/bootstrap/loaders:304:14
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/parseurl@1.3.3/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.0%  LazyCompile: *URL node:internal/url:632:14
+      1    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      1    0.0%    0.0%  LazyCompile: *Hash node:internal/crypto/hash:62:14
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^update node:internal/crypto/hash:99:40
+      1    0.0%    0.0%  Function: ^unrefActive node:internal/timers:317:21
+      1    0.0%    0.0%  Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      1    0.0%    0.0%  Function: ^trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  Function: ^socketOnDrain node:_http_server:587:23
+      1    0.0%    0.0%  Function: ^slice node:buffer:599:12
+      1    0.0%    0.0%  Function: ^shouldSetCookie /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:464:29
+      1    0.0%    0.0%  Function: ^shouldSave /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:440:24
+      1    0.0%    0.0%  Function: ^setWriteHeadHeaders /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/on-headers@1.0.2/node_modules/on-headers/index.js:105:30
+      1    0.0%    0.0%  Function: ^setCharset /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/utils.js:248:41
+      1    0.0%    0.0%  Function: ^set maxAge /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/session/cookie.js:83:13
+      1    0.0%    0.0%  Function: ^set /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/application.js:359:23
+      1    0.0%    0.0%  Function: ^session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1    0.0%    0.0%  Function: ^send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  Function: ^readStart node:_http_incoming:42:19
+      1    0.0%    0.0%  Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      1    0.0%    0.0%  Function: ^readFileSync node:fs:459:22
+      1    0.0%    0.0%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  Function: ^pipe /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:506:43
+      1    0.0%    0.0%  Function: ^parserOnIncoming node:_http_server:880:26
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:427:17
+      1    0.0%    0.0%  Function: ^onstat /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:717:33
+      1    0.0%    0.0%  Function: ^onParserExecuteCommon node:_http_server:719:31
+      1    0.0%    0.0%  Function: ^onParserExecute node:_http_server:662:25
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^nextHookFactory node:internal/modules/esm/loader:116:25
+      1    0.0%    0.0%  Function: ^matchKnownFields node:_http_incoming:276:26
+      1    0.0%    0.0%  Function: ^makeStatsCallback node:fs:202:27
+      1    0.0%    0.0%  Function: ^listenerCount node:events:840:23
+      1    0.0%    0.0%  Function: ^json /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:250:25
+      1    0.0%    0.0%  Function: ^join node:path:1166:7
+      1    0.0%    0.0%  Function: ^isURLInstance node:internal/url:1509:23
+      1    0.0%    0.0%  Function: ^header /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:777:29
+      1    0.0%    0.0%  Function: ^hash /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:596:14
+      1    0.0%    0.0%  Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:318:20
+      1    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:647:57
+      1    0.0%    0.0%  Function: ^getEncodingOps node:buffer:684:24
+      1    0.0%    0.0%  Function: ^get node:internal/streams/readable:1166:8
+      1    0.0%    0.0%  Function: ^get node:internal/streams/duplex:97:8
+      1    0.0%    0.0%  Function: ^fromStringFast node:buffer:418:24
+      1    0.0%    0.0%  Function: ^fresh /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/parseurl@1.3.3/node_modules/parseurl/index.js:153:16
+      1    0.0%    0.0%  Function: ^format /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/content-type@1.0.4/node_modules/content-type/index.js:65:17
+      1    0.0%    0.0%  Function: ^finalhandler /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/finalhandler@1.2.0/node_modules/finalhandler/index.js:77:23
+      1    0.0%    0.0%  Function: ^etag /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/etag@1.8.1/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^emitReadable_ node:internal/streams/readable:574:23
+      1    0.0%    0.0%  Function: ^dispatch /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^dirname node:path:1275:10
+      1    0.0%    0.0%  Function: ^destroy node:internal/streams/destroy:32:17
+      1    0.0%    0.0%  Function: ^deserializeObject /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.0%  Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      1    0.0%    0.0%  Function: ^copy node:buffer:782:16
+      1    0.0%    0.0%  Function: ^authenticate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/passport@0.6.0/node_modules/passport/lib/middleware/authenticate.js:94:31
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:489:20
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:285:16
+      1    0.0%    0.0%  Function: ^_storeHeader node:_http_outgoing:384:22
+      1    0.0%    0.0%  Function: ^_flushOutput node:_http_outgoing:1030:63
+      1    0.0%    0.0%  Function: ^_dump node:_http_incoming:419:49
+      1    0.0%    0.0%  Function: ^_destroy node:_http_incoming:221:55
+      1    0.0%    0.0%  Function: ^_addHeaderLines node:_http_incoming:244:25
+      1    0.0%    0.0%  Function: ^_addHeaderLine node:_http_incoming:382:24
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:343:37
+      1    0.0%    0.0%  Function: ^Timeout node:internal/timers:167:17
+      1    0.0%    0.0%  Function: ^ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    0.0%    0.0%  Function: ^Long.fromBits /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:89:30
+      1    0.0%    0.0%  Function: ^EventEmitter.init node:events:337:29
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:231:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/per_context/primordials:455:15
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/per_context/primordials:427:15
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/modules/esm/module_job:75:41
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:683:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:577:45
+      1    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:571:44
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:262:27
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:598:43
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:220:28
+      1    0.0%    0.0%  Function: *wasm-function[15]
+
+ [C++]:
+   ticks  total  nonlib   name
+   1776   36.1%   36.8%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    749   15.2%   15.5%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    531   10.8%   11.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    404    8.2%    8.4%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    175    3.6%    3.6%  T __kernelrpc_thread_policy_set
+    146    3.0%    3.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    141    2.9%    2.9%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    109    2.2%    2.3%  T _vm_copy
+     95    1.9%    2.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     47    1.0%    1.0%  T _read$NOCANCEL
+     42    0.9%    0.9%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.4%    0.5%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.4%    0.5%  T _task_policy_set
+     18    0.4%    0.4%  t node::fs::OpenFileHandle(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.4%    0.4%  T ___ulock_wait
+     16    0.3%    0.3%  t std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >& std::__1::__input_arithmetic<long long, wchar_t, std::__1::char_traits<wchar_t> >(std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >&, long long&)
+     15    0.3%    0.3%  T _mach_msg_server
+     13    0.3%    0.3%  T _kdebug_typefilter
+     12    0.2%    0.2%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.2%    0.2%  t _small_malloc_should_clear
+      9    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      9    0.2%    0.2%  t __os_once_gate_wait
+      9    0.2%    0.2%  T node::i18n::ConverterObject::Decode(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.2%  T _inet_net_pton
+      9    0.2%    0.2%  T ___bsdthread_create
+      8    0.2%    0.2%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.2%    0.2%  T _open$NOCANCEL
+      8    0.2%    0.2%  T ___sflags
+      7    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  T node::fs::FileHandle::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  t _tiny_malloc_should_clear
+      6    0.1%    0.1%  T node::InternalCallbackScope::Close()
+      6    0.1%    0.1%  T ___sfp
+      5    0.1%    0.1%  t _tiny_free_no_lock
+      5    0.1%    0.1%  t _szone_realloc
+      5    0.1%    0.1%  t _nanov2_find_block_and_allocate
+      5    0.1%    0.1%  t __os_once_gate_broadcast
+      5    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      5    0.1%    0.1%  t ___vfprintf
+      5    0.1%    0.1%  T _fgetws
+      5    0.1%    0.1%  T __kernelrpc_mach_vm_purgable_control_trap
+      4    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t _tiny_malloc_from_free_list
+      4    0.1%    0.1%  t ___vfwscanf
+      4    0.1%    0.1%  T std::__1::locale::classic()
+      4    0.1%    0.1%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T _mach_msg_destroy
+      4    0.1%    0.1%  T _fopen
+      3    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      3    0.1%    0.1%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_unsigned<unsigned long long>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, unsigned long long&) const
+      3    0.1%    0.1%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_floating_point<float>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, float&) const
+      3    0.1%    0.1%  t node::fs::ReadLink(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  t dyld3::Loader::mapAndFixupAllImages(Diagnostics&, bool, bool)
+      3    0.1%    0.1%  t _tiny_try_realloc_in_place
+      3    0.1%    0.1%  t _tiny_free_list_add_ptr
+      3    0.1%    0.1%  t _rack_region_insert
+      3    0.1%    0.1%  t _nanov2_allocate
+      3    0.1%    0.1%  t _free_small
+      3    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+      3    0.1%    0.1%  T __platform_strncmp
+      2    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)3>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t std::__1::messages_byname<char>::~messages_byname()
+      2    0.0%    0.0%  t std::__1::locale::__imp::__imp(std::__1::locale::__imp const&, std::__1::locale::facet*, long)
+      2    0.0%    0.0%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t _small_malloc_from_free_list
+      2    0.0%    0.0%  t _moreglue
+      2    0.0%    0.0%  t _free_tiny
+      2    0.0%    0.0%  t __cxxabiv1::__free_with_fallback(void*)
+      2    0.0%    0.0%  t ___printf_render_quote
+      2    0.0%    0.0%  t ___find_warguments
+      2    0.0%    0.0%  t (anonymous namespace)::fallback_free(void*)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::Environment::CheckImmediate(uv_check_s*)
+      2    0.0%    0.0%  T node::AsyncHooks::pop_async_context(double)
+      2    0.0%    0.0%  T _semaphore_create
+      2    0.0%    0.0%  T _malloc_zone_malloc
+      2    0.0%    0.0%  T _malloc
+      2    0.0%    0.0%  T ___thread_selfid
+      1    0.0%    0.0%  t std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t non-virtual thunk to node::SimpleWriteWrap<node::ReqWrap<uv_write_s> >::GetAsyncWrap()
+      1    0.0%    0.0%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::cares_wrap::QueryWrap<node::cares_wrap::TxtTraits>::~QueryWrap()
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t _tiny_free_list_remove_ptr
+      1    0.0%    0.0%  t _szone_free
+      1    0.0%    0.0%  t _nanov2_pointer_size
+      1    0.0%    0.0%  t _nanov2_malloc
+      1    0.0%    0.0%  t _mach_msg_destroy_port
+      1    0.0%    0.0%  t _lflush
+      1    0.0%    0.0%  t _default_zone_realloc
+      1    0.0%    0.0%  t _default_zone_free_definite_size
+      1    0.0%    0.0%  t __cxxabiv1::__function_type_info::~__function_type_info()
+      1    0.0%    0.0%  t __cxxabiv1::__enum_type_info::~__enum_type_info()
+      1    0.0%    0.0%  t ___srefill0
+      1    0.0%    0.0%  T std::__1::collate_byname<char>::collate_byname(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long)
+      1    0.0%    0.0%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::get(wchar_t*, long)
+      1    0.0%    0.0%  T std::__1::__shared_weak_count::__release_shared()
+      1    0.0%    0.0%  T std::__1::__next_prime(unsigned long)
+      1    0.0%    0.0%  T std::__1::__codecvt_utf8<char32_t>::do_in(__mbstate_t&, char const*, char const*, char const*&, char32_t*, char32_t*, char32_t*&) const
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqBase::~FSReqBase()
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::Reject(uv_fs_s*)
+      1    0.0%    0.0%  T node::cares_wrap::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+      1    0.0%    0.0%  T _vdprintf
+      1    0.0%    0.0%  T _task_self_trap
+      1    0.0%    0.0%  T _task_restartable_ranges_synchronize
+      1    0.0%    0.0%  T _swscanf_l
+      1    0.0%    0.0%  T _setlinebuf
+      1    0.0%    0.0%  T _posix_spawnattr_destroy
+      1    0.0%    0.0%  T _objc_msgSendSuper2
+      1    0.0%    0.0%  T _fileno
+      1    0.0%    0.0%  T _fcntl
+      1    0.0%    0.0%  T _dxprintf_exec
+      1    0.0%    0.0%  T _catgets
+      1    0.0%    0.0%  T __sseek
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_protect_trap
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_allocate_trap
+      1    0.0%    0.0%  T ___swrite
+      1    0.0%    0.0%  T ___gdtoa
+
+ [Summary]:
+   ticks  total  nonlib   name
+    156    3.2%    3.2%  JavaScript
+   4670   94.9%   96.6%  C++
+    155    3.1%    3.2%  GC
+     90    1.8%          Shared libraries
+      6    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   4225   99.1%   85.8%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     15    0.4%    0.3%  T _mach_msg_server
+      8    0.2%    0.2%  T _open$NOCANCEL
+      7    0.2%    0.1%  T _kdebug_typefilter
+      2    0.0%    0.0%  t dyld3::Loader::mapAndFixupAllImages(Diagnostics&, bool, bool)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t _tiny_free_list_add_ptr
+      1    0.0%    0.0%  T _posix_spawnattr_destroy
+      1    0.0%    0.0%  T _fcntl
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1776   36.1%  t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+   1010   56.9%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     75    7.4%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     10   13.3%        Function: ^readPackage node:internal/modules/cjs/loader:301:21
+      9   90.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      4   44.4%            Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      4   44.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1   11.1%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:452:17
+      1   10.0%          Function: ^tryPackage node:internal/modules/cjs/loader:349:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      8   10.7%        Function: ^pipe /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:506:43
+      8  100.0%          Function: ^serveStatic /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:72:31
+      5   62.5%            LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      3   37.5%            Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      6    8.0%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      5   83.3%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      4   80.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1   20.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1   16.7%          Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+      4    5.3%        Function: ^normalize node:path:1127:12
+      3   75.0%          Function: ^pipe /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:506:43
+      3  100.0%            Function: ^serveStatic /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:72:31
+      1   25.0%          Function: ^join node:path:1166:7
+      1  100.0%            Function: ^pipe /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:506:43
+      3    4.0%        LazyCompile: *realpathSync node:fs:2460:22
+      3  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:404:20
+      3  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      3    4.0%        Function: ^parse /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/content-type@1.0.4/node_modules/content-type/index.js:106:16
+      3  100.0%          Function: ^setCharset /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/utils.js:248:41
+      3  100.0%            Function: ^send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+      3    4.0%        Function: ^checkInvalidHeaderChar node:_http_common:231:32
+      3  100.0%          Function: ^<anonymous> node:_http_outgoing:577:45
+      3  100.0%            Function: ^setHeader node:_http_outgoing:601:57
+      2    2.7%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/parse-command.js:13:26
+      2  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2  100.0%            LazyCompile: ~parseCommand file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/parse-command.js:1:29
+      2    2.7%        Function: ^header /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:777:29
+      2  100.0%          Function: ^json /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:250:25
+      2  100.0%            Function: ^getTechInfo file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/controllers/test.controller.js:19:21
+      2    2.7%        Function: ^format /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/content-type@1.0.4/node_modules/content-type/index.js:65:17
+      2  100.0%          Function: ^setCharset /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/utils.js:248:41
+      2  100.0%            Function: ^send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+      2    2.7%        Function: ^expressInit /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/middleware/init.js:29:30
+      2  100.0%          LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      2    2.7%        Function: ^deserializeObject /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/deserializer.js:65:27
+      1   50.0%          LazyCompile: ~deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            LazyCompile: ~deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/bson.js:161:21
+      1   50.0%          Function: ^deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            Function: ^deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/bson.js:161:21
+      1    1.3%        LazyCompile: ~validate_config /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bcrypt@5.0.1/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.3%        LazyCompile: ~translatePeerCertificate node:_tls_common:129:34
+      1  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:129:34
+      1  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:989:50
+      1    1.3%        LazyCompile: ~toIdentifier /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/toidentifier@1.0.1/node_modules/toidentifier/index.js:24:23
+      1  100.0%          LazyCompile: ~forEachCode /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:259:38
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%        LazyCompile: ~pathtoRegexp /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/path-to-regexp@0.1.7/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          Function: ^Layer /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~route /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:502:29
+      1    1.3%        LazyCompile: ~patch /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/polyfills.js:29:16
+      1  100.0%          LazyCompile: ~patch /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/graceful-fs.js:1:1
+      1    1.3%        LazyCompile: ~parse /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bytes@3.1.2/node_modules/bytes/index.js:141:15
+      1  100.0%          LazyCompile: ~json /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/body-parser@1.20.0/node_modules/body-parser/lib/types/json.js:50:15
+      1  100.0%            LazyCompile: ~applicationMiddlewares file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/applicationMiddlewares.config.js:7:32
+      1    1.3%        LazyCompile: ~module.exports.get_napi_build_versions /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:115:50
+      1  100.0%          LazyCompile: ~module.exports.expand_commands /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:94:42
+      1  100.0%            LazyCompile: ~parseOpts /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1    1.3%        LazyCompile: ~match /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          Function: ^matchLayer /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            Function: ^next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      1    1.3%        LazyCompile: ~format /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/content-type@1.0.4/node_modules/content-type/index.js:65:17
+      1  100.0%          LazyCompile: ~setCharset /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/utils.js:248:41
+      1  100.0%            LazyCompile: ~send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+      1    1.3%        LazyCompile: ~createToken /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/semver@7.3.7/node_modules/semver/internal/re.js:11:21
+      1  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/semver@7.3.7/node_modules/semver/internal/re.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%        LazyCompile: ~containsNamespace /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/depd@2.0.0/node_modules/depd/index.js:29:28
+      1  100.0%          LazyCompile: ~isignored /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/depd@2.0.0/node_modules/depd/index.js:153:20
+      1  100.0%            LazyCompile: ~depd /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/depd@2.0.0/node_modules/depd/index.js:103:15
+      1    1.3%        LazyCompile: ~ConnectionString /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb-connection-string-url@2.5.3/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1  100.0%          LazyCompile: ~parseOptions /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/connection_string.js:204:22
+      1  100.0%            LazyCompile: ~MongoClient /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/mongo_client.js:63:16
+      1    1.3%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1035:21
+      1  100.0%          LazyCompile: ~YargsInstance file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1    1.3%        LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~pluralize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1    1.3%        LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          Function: ^error /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:115:39
+      1  100.0%            LazyCompile: *emit node:events:460:44
+      1    1.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1    1.3%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/application.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%        Function: ^set node:internal/modules/esm/module_map:23:6
+      1  100.0%          Function: ^#createModuleJob node:internal/modules/esm/loader:458:19
+      1  100.0%            Function: ^getModuleJob node:internal/modules/esm/loader:417:21
+      1    1.3%        Function: ^resolve node:path:1091:10
+      1  100.0%          Function: ^realpathSync node:fs:2460:22
+      1  100.0%            Function: ^finalizeResolution node:internal/modules/esm/resolve:396:28
+      1    1.3%        Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+      1  100.0%          Function: ^moduleProvider node:internal/modules/esm/loader:459:28
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%        Function: ^getPackageConfig node:internal/modules/esm/resolve:197:26
+      1  100.0%          Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      1  100.0%            Function: ^getPackageType node:internal/modules/esm/resolve:843:24
+      1    1.3%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      1    1.3%        Function: ^findLongestRegisteredExtension node:internal/modules/cjs/loader:424:40
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      1    1.3%        Function: ^encodePathChars node:internal/url:1457:25
+      1  100.0%          Function: ^pathToFileURL node:internal/url:1472:23
+      1  100.0%            Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      1    1.3%        Function: ^addJobsToDependencyGraph node:internal/modules/esm/module_job:107:38
+      1  100.0%          Function: ^<anonymous> node:internal/per_context/primordials:443:25
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+     74    7.3%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     74  100.0%        Function: ^Socket._writeGeneric node:net:848:42
+     74  100.0%          Function: ^Socket._writev node:net:880:36
+     74  100.0%            Function: ^doWrite node:internal/streams/writable:400:17
+     42    4.2%      Function: ^memoryUsage node:internal/process/per_thread:169:23
+     42  100.0%        Function: ^getTechInfo file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/controllers/test.controller.js:19:21
+     42  100.0%          Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+     42  100.0%            Function: ^next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/route.js:116:16
+     29    2.9%      Function: ^initialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/passport@0.6.0/node_modules/passport/lib/middleware/initialize.js:51:29
+     16   55.2%        Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+     16  100.0%          Function: ^trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+     14   87.5%            LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      2   12.5%            Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:280:64
+     13   44.8%        LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+     13  100.0%          LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+     13  100.0%            Function: ^session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+     24    2.4%      Function: ^readPackage node:internal/modules/cjs/loader:301:21
+     10   41.7%        Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+     10  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+     10  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      9   37.5%        Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+      6   66.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      6  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      2   22.2%          Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1   11.1%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:992:33
+      4   16.7%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:483:24
+      2   50.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1    4.2%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+     23    2.3%      LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1185:39
+     23  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:992:33
+     23  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:771:24
+     23  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+     23    2.3%      Function: ^Hash node:internal/crypto/hash:62:14
+     23  100.0%        Function: ^createHash node:crypto:129:20
+     12   52.2%          Function: ^hash /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:596:14
+      6   50.0%            Function: ^isModified /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:425:24
+      6   50.0%            Function: ^generate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:363:22
+     11   47.8%          Function: ^entitytag /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/etag@1.8.1/node_modules/etag/index.js:39:20
+     11  100.0%            Function: ^etag /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/etag@1.8.1/node_modules/etag/index.js:70:15
+     21    2.1%      LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      9   42.9%        Function: ^error /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:115:39
+      6   66.7%          LazyCompile: *emit node:events:460:44
+      6  100.0%            Function: ^error /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:267:45
+      3   33.3%          Function: ^emit node:events:460:44
+      3  100.0%            Function: ^error /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:267:45
+      8   38.1%        Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:136:31
+      8  100.0%          Function: ^router /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:46:18
+      7   87.5%            LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1   12.5%            Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      3   14.3%        Function: ^jsonParser /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/body-parser@1.20.0/node_modules/body-parser/lib/types/json.js:98:30
+      2   66.7%          LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      1   33.3%          Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1    4.8%        Function: ^session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1  100.0%          Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+     21    2.1%      Function: ^session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+     12   57.1%        LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+     12  100.0%          LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+     12  100.0%            Function: ^urlencodedParser /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/body-parser@1.20.0/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      9   42.9%        Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      9  100.0%          Function: ^trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      9  100.0%            LazyCompile: *next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+     20    2.0%      Function: ^URL node:internal/url:632:14
+      7   35.0%        Function: ^URL node:internal/url:632:14
+      4   57.1%          Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      3   75.0%            Function: ^getPackageType node:internal/modules/esm/resolve:843:24
+      1   25.0%            Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      2   28.6%          LazyCompile: ~getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      2  100.0%            LazyCompile: ~getPackageType node:internal/modules/esm/resolve:843:24
+      1   14.3%          Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      1  100.0%            Function: ^ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      4   20.0%        Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      4  100.0%          Function: ^getPackageType node:internal/modules/esm/resolve:843:24
+      3   75.0%            Function: ^getFileProtocolModuleFormat node:internal/modules/esm/get_format:51:37
+      1   25.0%            LazyCompile: ~getFileProtocolModuleFormat node:internal/modules/esm/get_format:51:37
+      3   15.0%        Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      3  100.0%          Function: ^ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      3  100.0%            Function: ^resolve node:internal/modules/esm/loader:791:16
+      2   10.0%        Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      2  100.0%          Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      2  100.0%            Function: ^ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1    5.0%        LazyCompile: ~defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:103:39
+      1  100.0%          LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1124:30
+      1  100.0%            LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1    5.0%        Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      1  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      1  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      1    5.0%        Function: ^load node:internal/modules/esm/loader:559:13
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    5.0%        Function: ^defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:103:39
+      1  100.0%          Function: ^defaultResolve node:internal/modules/esm/resolve:1124:30
+      1  100.0%            Function: ^ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+     18    1.8%      Function: ^end node:_http_outgoing:912:45
+     18  100.0%        Function: ^end /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:250:27
+     18  100.0%          Function: ^send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+     18  100.0%            Function: ^json /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:250:25
+     16    1.6%      Function: ^writeHead node:_http_server:292:19
+     16  100.0%        Function: ^writeHead /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/on-headers@1.0.2/node_modules/on-headers/index.js:28:29
+     16  100.0%          Function: ^_implicitHeader node:_http_server:287:68
+     16  100.0%            Function: ^write_ node:_http_outgoing:790:16
+     14    1.4%      Function: ^hash /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:596:14
+     13   92.9%        Function: ^isModified /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:425:24
+      7   53.8%          Function: ^shouldSetCookie /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:464:29
+      7  100.0%            Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:220:28
+      6   46.2%          Function: ^shouldSave /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:440:24
+      6  100.0%            Function: ^end /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:250:27
+      1    7.1%        Function: ^generate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:363:22
+      1  100.0%          Function: ^session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1  100.0%            LazyCompile: *trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+     13    1.3%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:332:26
+     11   84.6%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     11  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:992:33
+     11  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      2   15.4%        Function: ^trySelf node:internal/modules/cjs/loader:452:17
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+     13    1.3%      Function: ^send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+     13  100.0%        Function: ^json /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:250:25
+     13  100.0%          Function: ^getTechInfo file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/controllers/test.controller.js:19:21
+     13  100.0%            Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+
+    749   15.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    749  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    738   98.5%      Function: ^compileFunction node:vm:316:25
+    729   98.8%        Function: ^wrapSafe node:internal/modules/cjs/loader:1040:18
+    674   92.5%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+    646   95.8%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     28    4.2%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     55    7.5%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+     55  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      9    1.2%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1040:18
+      9  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      9  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     11    1.5%      LazyCompile: ~compileFunction node:vm:316:25
+     11  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1040:18
+     11  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+     11  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+
+    531   10.8%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    531  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    528   99.4%      Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+    528  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:459:28
+    528  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+
+    404    8.2%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    404  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    397   98.3%      Function: ^openSync node:fs:585:18
+    394   99.2%        Function: ^readFileSync node:fs:459:22
+    360   91.4%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+    360  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+     29    7.4%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     23   79.3%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      6   20.7%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:992:33
+      7    1.7%      LazyCompile: ~openSync node:fs:585:18
+      7  100.0%        LazyCompile: ~readFileSync node:fs:459:22
+      7  100.0%          LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      6   85.7%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1   14.3%            LazyCompile: ~<anonymous> node:internal/modules/esm/translators:233:36
+
+    175    3.6%  T __kernelrpc_thread_policy_set
+
+    146    3.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    146  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    145   99.3%      Function: ^read node:internal/modules/package_json_reader:16:14
+    133   91.7%        Function: ^readPackage node:internal/modules/cjs/loader:301:21
+     90   67.7%          Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+     90  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+     24   18.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:332:26
+     14   58.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     10   41.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+     12    9.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:505:28
+     12  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      7    5.3%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:483:24
+      7  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:505:28
+      8    5.5%        Function: ^getPackageConfig node:internal/modules/esm/resolve:197:26
+      5   62.5%          Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      5  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      2   25.0%          Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      1   50.0%            Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      1   50.0%            Function: ^getPackageType node:internal/modules/esm/resolve:843:24
+      1   12.5%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:892:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      4    2.8%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:301:21
+      3   75.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:483:24
+      3  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1   25.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:332:26
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+
+    141    2.9%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    141  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+    110   78.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     91   82.7%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+     15   16.5%          Function: ~<anonymous> node:crypto:1:1
+     15  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8    8.8%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      8  100.0%            LazyCompile: ~get node:crypto:294:8
+      8    8.8%          Function: ~<anonymous> node:http:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7    7.7%          Function: ~<anonymous> node:tls:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    5.5%          Function: ~<anonymous> node:internal/child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    5.5%          Function: ~<anonymous> node:_http_client:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    4.4%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    4.4%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    4.4%          Function: ~<anonymous> node:child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    3.3%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      3  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      2    2.2%          LazyCompile: ~lazyLoadStreams node:fs:2893:25
+      2  100.0%            LazyCompile: ~get ReadStream node:fs:3036:17
+      2    2.2%          LazyCompile: ~get node:dns:415:8
+      2  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2    2.2%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:https:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    1.1%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     10    9.1%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+     10  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     10  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:771:24
+      9    8.2%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      7   77.8%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      7  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:254:58
+      2   22.2%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+     31   22.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     28   90.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      6   21.4%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5   17.9%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:521:29
+      5  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      5   17.9%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3   10.7%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    7.1%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:560:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    3.6%          Function: ~<anonymous> node:net:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.6%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    9.7%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2   66.7%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1   33.3%          LazyCompile: ~setupInspectorHooks node:internal/bootstrap/pre_execution:329:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+
+    109    2.2%  T _vm_copy
+     78   71.6%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      9   11.5%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2   22.2%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      2  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      2  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      1   11.1%        LazyCompile: ~stringToPath /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/get-intrinsic@1.1.2/node_modules/get-intrinsic/index.js:210:41
+      1  100.0%          LazyCompile: ~GetIntrinsic /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/get-intrinsic@1.1.2/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/call-bind@1.0.2/node_modules/call-bind/index.js:1:1
+      1   11.1%        LazyCompile: ~match /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          Function: ^matchLayer /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            Function: ^next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      1   11.1%        LazyCompile: ~isBad node:tls:197:17
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            LazyCompile: ~check node:tls:179:15
+      1   11.1%        LazyCompile: ~configure /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/winston@3.8.2/node_modules/winston/lib/winston/logger.js:81:12
+      1  100.0%          LazyCompile: ~Logger /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/winston@3.8.2/node_modules/winston/lib/winston/logger.js:40:14
+      1  100.0%            LazyCompile: ~DerivedLogger /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/winston@3.8.2/node_modules/winston/lib/winston/create-logger.js:43:16
+      1   11.1%        LazyCompile: ~cascade /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/logform@2.4.2/node_modules/logform/combine.js:12:17
+      1  100.0%          LazyCompile: ~module.exports /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/logform@2.4.2/node_modules/logform/combine.js:54:18
+      1  100.0%            LazyCompile: ~loggerConfig file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/logger/logger.js:7:22
+      1   11.1%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/index.js:29:38
+      1  100.0%          LazyCompile: ~onceWrapper node:events:622:21
+      1  100.0%            Function: ^emit node:events:460:44
+      1   11.1%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1035:21
+      1  100.0%          LazyCompile: ~YargsInstance file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      3    3.8%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      3  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      3  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/debug@2.6.9/node_modules/debug/src/node.js:1:1
+      3  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      2    2.6%      LazyCompile: ~parse file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      2  100.0%        LazyCompile: ~yargsParser.detailed file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/index.js:56:33
+      2  100.0%          LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1321:40
+      2  100.0%            LazyCompile: ~parse file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:687:10
+      1    1.3%      Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      1    1.3%      LazyCompile: ~y18n file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/index.mjs:4:14
+      1  100.0%        Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/lib/platform-shims/esm.mjs:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.3%      LazyCompile: ~write_ node:_http_outgoing:790:16
+      1  100.0%        LazyCompile: ~end node:_http_outgoing:912:45
+      1  100.0%          LazyCompile: ~end /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:250:27
+      1  100.0%            LazyCompile: ~send /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/response.js:111:25
+      1    1.3%      LazyCompile: ~truncate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/memory-pager@1.5.0/node_modules/memory-pager/index.js:128:19
+      1  100.0%        Function: ^Pager.set /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/memory-pager@1.5.0/node_modules/memory-pager/index.js:81:32
+      1  100.0%          LazyCompile: ~Bitfield /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/sparse-bitfield@3.0.3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~Bitfield /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/sparse-bitfield@3.0.3/node_modules/sparse-bitfield/index.js:5:19
+      1    1.3%      LazyCompile: ~tagsStrictEqual /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/server_description.js:152:25
+      1  100.0%        LazyCompile: ~equals /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/server_description.js:95:11
+      1  100.0%          LazyCompile: ~serverUpdateHandler /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/topology.js:321:24
+      1  100.0%            Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/topology.js:481:53
+      1    1.3%      LazyCompile: ~slowCases node:internal/util:165:19
+      1  100.0%        Function: ^normalizeEncoding node:internal/util:160:27
+      1  100.0%          Function: ^isEncoding node:buffer:535:40
+      1  100.0%            Function: ^_write node:internal/streams/writable:285:16
+      1    1.3%      LazyCompile: ~serveStatic /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:72:31
+      1  100.0%        LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:280:64
+      1    1.3%      LazyCompile: ~resolve node:internal/modules/esm/loader:791:16
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+      1  100.0%        Function: ^Readable.push node:internal/streams/readable:227:35
+      1  100.0%          LazyCompile: ~onStreamRead node:internal/stream_base_commons:167:22
+      1    1.3%      LazyCompile: ~prependListener node:events:618:29
+      1  100.0%        LazyCompile: ~prependListener node:internal/streams/legacy:96:25
+      1  100.0%          LazyCompile: ~Readable.pipe node:internal/streams/readable:654:35
+      1  100.0%            LazyCompile: ~Connection /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:37:16
+      1    1.3%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~prepareHandshakeDocument /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%        LazyCompile: ~performInitialHandshake /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%            LazyCompile: ~callback /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1    1.3%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.3%      LazyCompile: ~parseArgs file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/argsert.js:5:23
+      1  100.0%        LazyCompile: ~argsert file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/argsert.js:4:24
+      1  100.0%          LazyCompile: ~alias file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:157:10
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1128:36
+      1    1.3%      LazyCompile: ~parse node:url:167:37
+      1  100.0%        LazyCompile: ~urlParse node:url:151:18
+      1  100.0%          LazyCompile: ~resolve node:url:671:41
+      1  100.0%            LazyCompile: ~urlResolve node:url:667:20
+      1    1.3%      LazyCompile: ~onstat /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:717:33
+      1  100.0%        LazyCompile: ~<anonymous> node:fs:205:10
+      1    1.3%      LazyCompile: ~onParseError node:internal/url:563:22
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          Function: ^URL node:internal/url:632:14
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1124:30
+      1    1.3%      LazyCompile: ~nonOptionCount file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/validation.js:10:50
+      1  100.0%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1465:16
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1180:39
+      1  100.0%            LazyCompile: ~maybeAsyncResult file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/utils/maybe-async-result.js:2:33
+      1    1.3%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~resume /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/readable-stream@3.6.0/node_modules/readable-stream/lib/_stream_readable.js:902:16
+      1  100.0%          LazyCompile: ~Readable.resume /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/readable-stream@3.6.0/node_modules/readable-stream/lib/_stream_readable.js:886:38
+      1  100.0%            LazyCompile: ~Readable.on /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/readable-stream@3.6.0/node_modules/readable-stream/lib/_stream_readable.js:804:34
+      1    1.3%      LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~module.exports /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/qs@6.10.3/node_modules/qs/lib/parse.js:239:27
+      1  100.0%        Function: ^parseExtendedQueryString /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/utils.js:289:34
+      1  100.0%          Function: ^query /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%            Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1    1.3%      LazyCompile: ~module.exports /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/gauge@3.0.2/node_modules/gauge/plumbing.js:6:42
+      1  100.0%        LazyCompile: ~Gauge /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/gauge@3.0.2/node_modules/gauge/index.js:19:16
+      1  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/npmlog@5.0.1/node_modules/npmlog/log.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~matchKnownFields node:_http_incoming:276:26
+      1  100.0%        Function: ^_addHeaderLine node:_http_incoming:382:24
+      1  100.0%          Function: ^get node:_http_incoming:112:16
+      1  100.0%            Function: ^parserOnIncoming node:_http_server:880:26
+      1    1.3%      LazyCompile: ~isQueryPercentEncode /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/whatwg-url@11.0.0/node_modules/whatwg-url/lib/percent-encoding.js:58:30
+      1  100.0%        LazyCompile: ~isPathPercentEncode /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/whatwg-url@11.0.0/node_modules/whatwg-url/lib/percent-encoding.js:69:29
+      1  100.0%          LazyCompile: ~isUserinfoPercentEncode /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/whatwg-url@11.0.0/node_modules/whatwg-url/lib/percent-encoding.js:76:33
+      1  100.0%            LazyCompile: ~utf8PercentEncodeCodePointInternal /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/whatwg-url@11.0.0/node_modules/whatwg-url/lib/percent-encoding.js:97:44
+      1    1.3%      LazyCompile: ~initializeReportSignalHandlers node:internal/bootstrap/pre_execution:298:40
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~importModuleDynamicallyCallback node:internal/process/esm_loader:30:47
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/test.js:1:1
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~getModuleJob node:internal/modules/esm/loader:417:21
+      1  100.0%        LazyCompile: ~import node:internal/modules/esm/loader:512:15
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/modules/run_main:55:29
+      1  100.0%            LazyCompile: ~loadESM node:internal/process/esm_loader:88:41
+      1    1.3%      LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:396:28
+      1  100.0%        LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:985:23
+      1  100.0%          LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1124:30
+      1  100.0%            LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1    1.3%      LazyCompile: ~exports.find /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bcrypt@5.0.1/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%      LazyCompile: ~createWriteHead /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/on-headers@1.0.2/node_modules/on-headers/index.js:24:26
+      1  100.0%        LazyCompile: ~onHeaders /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/on-headers@1.0.2/node_modules/on-headers/index.js:56:20
+      1  100.0%          LazyCompile: ~session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1  100.0%            Function: ^handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1    1.3%      LazyCompile: ~createIndex /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/collection.js:255:16
+      1  100.0%        LazyCompile: ~setAutoRemove /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/connect-mongo@4.6.0_dxgbitp2yywizoduzfmva2cxhu/node_modules/connect-mongo/build/main/lib/MongoStore.js:138:18
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/connect-mongo@4.6.0_dxgbitp2yywizoduzfmva2cxhu/node_modules/connect-mongo/build/main/lib/MongoStore.js:124:42
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~concat node:buffer:541:32
+      1  100.0%        LazyCompile: ~makeFirstMessage /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:61:26
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/crypto/random:107:43
+      1    1.3%      LazyCompile: ~compileFunction node:vm:316:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1040:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.3%      LazyCompile: ~cloneObject /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/helpers/clone.js:119:21
+      1  100.0%        LazyCompile: ~clone /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/helpers/clone.js:29:15
+      1  100.0%          LazyCompile: ~SchemaTypeOptions /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/options/SchemaTypeOptions.js:18:14
+      1  100.0%            LazyCompile: ~SchemaObjectIdOptions /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/options/SchemaObjectIdOptions.js:18:1
+      1    1.3%      LazyCompile: ~checkInt node:internal/buffer:58:18
+      1  100.0%        LazyCompile: ~writeU_Int32LE node:internal/buffer:690:24
+      1  100.0%          LazyCompile: ~writeInt32LE node:internal/buffer:860:22
+      1  100.0%            LazyCompile: ~toBin /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/commands.js:345:10
+      1    1.3%      LazyCompile: ~attach /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/engine.io@6.2.0/node_modules/engine.io/build/engine.io.js:51:16
+      1  100.0%        LazyCompile: ~initEngine /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:240:15
+      1  100.0%          LazyCompile: ~attach /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:159:11
+      1  100.0%            LazyCompile: ~Server /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:49:16
+      1    1.3%      LazyCompile: ~allocUnsafe node:buffer:378:42
+      1  100.0%        LazyCompile: ~tryCreateBuffer node:fs:423:25
+      1  100.0%          LazyCompile: ~readFileSync node:fs:459:22
+      1  100.0%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:194:34
+      1    1.3%      LazyCompile: ~addHelpOpt file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:127:15
+      1  100.0%        LazyCompile: ~help file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:141:9
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1  100.0%            Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1    1.3%      LazyCompile: ~acquire /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sessions.js:597:12
+      1  100.0%        LazyCompile: ~get serverSession /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sessions.js:85:22
+      1  100.0%          LazyCompile: ~applySession /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sessions.js:661:22
+      1  100.0%            LazyCompile: ~command /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1    1.3%      LazyCompile: ~Socket._destroy node:net:728:37
+      1  100.0%        Function: ^_destroy node:internal/streams/destroy:70:18
+      1  100.0%          Function: ^destroy node:internal/streams/destroy:32:17
+      1  100.0%            LazyCompile: ~finish node:internal/streams/writable:747:16
+      1    1.3%      LazyCompile: ~Server /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:49:16
+      1  100.0%        Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/socketio.config.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~Server /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/server.js:28:16
+      1  100.0%        LazyCompile: ~createAndConnectServer /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/topology.js:475:32
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/topology.js:173:57
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~SafeMap node:internal/per_context/primordials:366:16
+      1  100.0%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1    1.3%      LazyCompile: ~ReadableState node:internal/streams/readable:78:23
+      1  100.0%        LazyCompile: ~Readable node:internal/streams/readable:181:18
+      1  100.0%          LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%            LazyCompile: ~Socket node:net:294:16
+      1    1.3%      LazyCompile: ~MongoStore /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/connect-mongo@4.6.0_dxgbitp2yywizoduzfmva2cxhu/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%        LazyCompile: ~create /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/connect-mongo@4.6.0_dxgbitp2yywizoduzfmva2cxhu/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%          Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/session.config.js:1:1
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.3%      LazyCompile: ~Module.load node:internal/modules/cjs/loader:992:33
+      1  100.0%        LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%          LazyCompile: ~Module.require node:internal/modules/cjs/loader:1020:36
+      1  100.0%            LazyCompile: ~require node:internal/modules/cjs/helpers:101:31
+      1    1.3%      LazyCompile: ~Long.negate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:613:38
+      1  100.0%        Function: ^Long.neg /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:619:35
+      1  100.0%          LazyCompile: ~Long.subtract /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:720:40
+      1  100.0%            LazyCompile: ~Long.sub /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:726:35
+      1    1.3%      LazyCompile: ~Long.isLong /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:236:28
+      1  100.0%        LazyCompile: ~Long.compare /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:291:39
+      1  100.0%          LazyCompile: ~Long.comp /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:311:36
+      1  100.0%            LazyCompile: ~Long.greaterThanOrEqual /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:477:50
+      1    1.3%      LazyCompile: ~Long.fromInt /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:98:29
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:45:36
+      1  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/long.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.3%      LazyCompile: ~HMAC /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:225:14
+      1  100.0%        LazyCompile: ~continueScramConversation /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%            LazyCompile: ~onMessage /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    1.3%      LazyCompile: ~<anonymous> node:internal/modules/esm/loader:530:15
+      1    1.3%      LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1321:40
+      1  100.0%        LazyCompile: ~parse file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:687:10
+      1  100.0%          LazyCompile: ~get file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      1  100.0%            Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1    1.3%      LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1231:19
+      1  100.0%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1321:40
+      1  100.0%          LazyCompile: ~parse file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:687:10
+      1  100.0%            LazyCompile: ~get file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      1    1.3%      LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1035:21
+      1  100.0%        LazyCompile: ~YargsInstance file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1  100.0%            Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1    1.3%      LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/utils.js:357:13
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/mongo_client.js:135:58
+      1  100.0%          LazyCompile: ~connectCallback /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/operations/connect.js:17:29
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/operations/connect.js:76:31
+      1    1.3%      LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/monitor.js:177:73
+      1  100.0%        Function: ^onMessage /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%          Function: ^<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%            Function: ^emit node:events:460:44
+      1    1.3%      Function: ~<anonymous> node:internal/streams/lazy_transform:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      1  100.0%            Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      1    1.3%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/iconv-lite@0.4.24/node_modules/iconv-lite/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/connect-mongo@4.6.0_dxgbitp2yywizoduzfmva2cxhu/node_modules/connect-mongo/build/main/lib/MongoStore.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@dabh+diagnostics@2.0.3/node_modules/@dabh/diagnostics/node/development.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.3%      Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1  100.0%        LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1020:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+
+     95    1.9%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     95  100.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+     83   87.4%      Function: ^stat node:fs:1504:14
+     83  100.0%        Function: ^sendFile /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:712:51
+     83  100.0%          Function: ^pipe /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/send@0.18.0/node_modules/send/index.js:506:43
+     83  100.0%            Function: ^serveStatic /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/serve-static@1.15.0/node_modules/serve-static/index.js:72:31
+     10   10.5%      Function: ^statSync node:fs:1580:18
+      9   90.0%        Function: ^tryStatSync node:internal/modules/esm/resolve:189:3
+      8   88.9%          Function: ^finalizeResolution node:internal/modules/esm/resolve:396:28
+      8  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      1   11.1%          Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:985:23
+      1   10.0%        Function: ^fileExists node:internal/modules/esm/resolve:288:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:304:27
+      1  100.0%            Function: ^packageResolve node:internal/modules/esm/resolve:892:24
+      2    2.1%      Function: ^realpathSync node:fs:2460:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:395:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:411:23
+
+     71    1.4%  /usr/lib/system/libsystem_pthread.dylib
+     66   93.0%    t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      5    7.6%      t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1   20.0%        LazyCompile: ~parseOptions /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/connection_string.js:204:22
+      1  100.0%          LazyCompile: ~MongoClient /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/mongo_client.js:63:16
+      1  100.0%            LazyCompile: ~connect /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/mongo_client.js:227:19
+      1   20.0%        LazyCompile: ~merge /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/merge-descriptors@1.0.1/node_modules/merge-descriptors/index.js:34:15
+      1  100.0%          LazyCompile: ~createApplication /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/express.js:37:27
+      1  100.0%            Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/app.config.js:1:1
+      1   20.0%        LazyCompile: ~isIPv4 node:internal/net:31:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:1076:26
+      1   20.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1   20.0%        Function: ^parserOnHeadersComplete node:_http_common:77:33
+      3    4.5%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      3  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      3  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      3  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      3    4.5%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      3  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      3  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.0%      LazyCompile: ~value node:internal/console/constructor:336:20
+      2  100.0%        LazyCompile: ~log node:internal/console/constructor:375:6
+      2  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      2  100.0%            LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/index.js:29:38
+      2    3.0%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:168:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.0%      LazyCompile: ~realpathSync node:fs:2460:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:404:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    3.0%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      2  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      2  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/debug@2.6.9/node_modules/debug/src/node.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      2    3.0%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      2  100.0%        LazyCompile: ~Socket node:net:294:16
+      2  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      2  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      2    3.0%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      2  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:349:29
+      2  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    1.5%      Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/index.js:1:1
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~writeCommand /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%        LazyCompile: ~write /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:403:15
+      1  100.0%          LazyCompile: ~command /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1    1.5%      LazyCompile: ~urlParse node:url:151:18
+      1  100.0%        LazyCompile: ~validate_config /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@mapbox+node-pre-gyp@1.0.9/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bcrypt@5.0.1/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.5%      LazyCompile: ~store.generate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:158:28
+      1  100.0%        LazyCompile: ~generate /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:363:22
+      1  100.0%          LazyCompile: ~session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1  100.0%            LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1    1.5%      LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~makeConnection /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%          LazyCompile: ~connect /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%            LazyCompile: ~checkServer /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1    1.5%      LazyCompile: ~session /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express-session@1.17.3/node_modules/express-session/index.js:179:26
+      1  100.0%        LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:280:64
+      1    1.5%      LazyCompile: ~serializeInto /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%        LazyCompile: ~serialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/bson.js:110:19
+      1  100.0%          LazyCompile: ~toBin /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%            LazyCompile: ~writeCommand /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1    1.5%      LazyCompile: ~retry /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/graceful-fs.js:397:16
+      1  100.0%        LazyCompile: ~resetQueue /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/graceful-fs.js:383:21
+      1  100.0%          LazyCompile: ~closeSync /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/graceful-fs@4.2.10/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%            Function: ^readFileSync node:fs:459:22
+      1    1.5%      LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:567:30
+      1  100.0%          LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:673:31
+      1  100.0%            Function: ^resolveExports node:internal/modules/cjs/loader:483:24
+      1    1.5%      LazyCompile: ~read /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/saslprep@1.0.3/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/saslprep@1.0.3/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.5%      LazyCompile: ~query node:dns:289:17
+      1  100.0%        LazyCompile: ~resolveSRVRecord /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/connection_string.js:45:26
+      1  100.0%          LazyCompile: ~connect /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/operations/connect.js:8:17
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/mongo_client.js:134:52
+      1    1.5%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.5%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.5%      LazyCompile: ~onMessage /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1    1.5%      LazyCompile: ~load node:internal/modules/esm/loader:559:13
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~getPathname /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:537:21
+      1  100.0%        LazyCompile: ~next /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/application.js:165:29
+      1    1.5%      LazyCompile: ~expressInit /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%        LazyCompile: ~handle /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/express@4.18.1/node_modules/express/lib/router/index.js:280:64
+      1    1.5%      LazyCompile: ~deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/bson.js:161:21
+      1  100.0%          LazyCompile: ~parse /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1  100.0%            LazyCompile: ~onMessage /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    1.5%      LazyCompile: ~desc.value node:internal/per_context/primordials:340:32
+      1  100.0%        LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:148:60
+      1  100.0%          Function: ^moduleProvider node:internal/modules/esm/loader:459:28
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~defaultLoad node:internal/modules/esm/load:72:27
+      1  100.0%        LazyCompile: ~ObjectDefineProperty.__proto__ node:internal/modules/esm/loader:150:5
+      1  100.0%          LazyCompile: ~load node:internal/modules/esm/loader:559:13
+      1  100.0%            LazyCompile: ~moduleProvider node:internal/modules/esm/loader:459:28
+      1    1.5%      LazyCompile: ~default file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/escalade@3.1.1/node_modules/escalade/sync/index.mjs:4:25
+      1  100.0%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1086:13
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1072:20
+      1  100.0%            LazyCompile: ~version file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:927:12
+      1    1.5%      LazyCompile: ~de file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@faker-js+faker@7.5.0/node_modules/@faker-js/faker/dist/esm/chunk-TWGB44HB.mjs:12:14901
+      1  100.0%        Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/@faker-js+faker@7.5.0/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.5%      LazyCompile: ~createHttpErrorConstructor /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:112:37
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1    1.5%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~passwordDigest /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.5%      LazyCompile: ~createCollection /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/model.js:1396:51
+      1  100.0%        LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/model.js:1336:5
+      1  100.0%          LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/model.js:1339:28
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~applicationMiddlewares file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/applicationMiddlewares.config.js:7:32
+      1  100.0%        Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/index.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~aliasFields /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/schema.js:172:21
+      1  100.0%        LazyCompile: ~add /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/schema.js:553:36
+      1  100.0%          LazyCompile: ~compile /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/model.js:4974:33
+      1  100.0%            LazyCompile: ~Mongoose._model /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongoose@6.6.1/node_modules/mongoose/lib/index.js:581:37
+      1    1.5%      LazyCompile: ~__extends /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/binary.js:9:21
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/binary.js:268:36
+      1  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/bson@4.7.0/node_modules/bson/lib/binary.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1    1.5%      LazyCompile: ~YargsInstance file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%        LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1  100.0%          Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~Socket.read node:net:700:33
+      1  100.0%        LazyCompile: ~initRead node:_tls_wrap:442:18
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.5%      LazyCompile: ~Server /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/socket.io@4.5.1/node_modules/socket.io/dist/index.js:49:16
+      1  100.0%        Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/socketio.config.js:1:1
+      1  100.0%          t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%            t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1    1.5%      LazyCompile: ~Pager.set /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/memory-pager@1.5.0/node_modules/memory-pager/index.js:81:32
+      1  100.0%        LazyCompile: ~Bitfield /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/sparse-bitfield@3.0.3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~Bitfield /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/sparse-bitfield@3.0.3/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~read /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/saslprep@1.0.3/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1    1.5%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:505:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:865:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:771:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1020:36
+      1    1.5%      LazyCompile: ~IPv6 /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/ipaddr.js@1.9.1/node_modules/ipaddr.js/lib/ipaddr.js:200:18
+      1  100.0%        Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/ipaddr.js@1.9.1/node_modules/ipaddr.js/lib/ipaddr.js:199:26
+      1  100.0%          Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/ipaddr.js@1.9.1/node_modules/ipaddr.js/lib/ipaddr.js:1:10
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/ipaddr.js@1.9.1/node_modules/ipaddr.js/lib/ipaddr.js:1:1
+      1    1.5%      LazyCompile: ~<anonymous> node:path:1082:10
+      1  100.0%        LazyCompile: ~resolve node:path:1091:10
+      1  100.0%          LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:103:28
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:29:36
+      1    1.5%      LazyCompile: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:1013:14
+      1  100.0%        LazyCompile: ~parse file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:687:10
+      1  100.0%          LazyCompile: ~get file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/yargs@17.6.0/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      1  100.0%            Script: ~<anonymous> file:///Users/jeanvittory/Documents/Programacion/BackendEcommerce/src/config/yargs.config.js:1:1
+      1    1.5%      LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sessions.js:133:52
+      1  100.0%        LazyCompile: ~maybePromise /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/utils.js:345:22
+      1  100.0%          LazyCompile: ~endSession /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/sessions.js:129:15
+      1  100.0%            LazyCompile: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mongodb@4.9.1/node_modules/mongodb/lib/operations/execute_operation.js:69:70
+      1    1.5%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.5%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/statuses@2.0.1/node_modules/statuses/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/side-channel@1.0.4/node_modules/side-channel/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/mquery@4.0.3/node_modules/mquery/lib/collection/collection.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1080:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1135:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:992:33
+      1    1.5%      Function: ^onParseComplete node:internal/url:544:25
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          Function: ^URL node:internal/url:632:14
+      1  100.0%            Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:253:31
+      1    1.5%      Function: ^forEachCode /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:259:38
+      1  100.0%        t node::options_parser::OptionsParser<node::PerIsolateOptions>::Parse(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*, node::PerIsolateOptions*, node::OptionEnvvarSettings, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+      1  100.0%          LazyCompile: ~populateConstructorExports /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:258:37
+      1  100.0%            Function: ~<anonymous> /Users/jeanvittory/Documents/Programacion/BackendEcommerce/node_modules/.pnpm/http-errors@2.0.0/node_modules/http-errors/index.js:1:1
+

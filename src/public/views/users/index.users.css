@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('/mainApp/assets/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorContainer {
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-color: brown;
+  color: bisque;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navProfile {
+  background-color: rgb(21, 20, 20);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navProfile h2 {
+  color: wheat;
+  width: 20%;
+  letter-spacing: 1px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 3rem;
+  border-radius: 50px;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin-top: 4rem;
+  grid-gap: 20px;
+}
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.productImg {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.productCaption {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: bisque;
+  margin: 0.8rem 0;
+}
+
+.productPrice {
+  color: bisque;
+  font-family: 'Space Mono', monospace;
+  margin: 0 0 0.8rem 0;
+}
+.btnLogout,
+.btnOrder {
+  padding: 0.3rem;
+}
+
+.buyButton,
+.deleteButton {
+  padding: 0 0.8rem;
+}
+
+.cart {
+  position: relative;
+  width: 3rem;
+}
+
+.cartContainer {
+  display: flex;
+}
+
+.cart {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: red;
+  text-align: center;
+}
+
+.btnsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: black;
+  color: bisque;
+  font-family: 'Space Mono', monospace;
+}
+
+@media screen and (max-width: 780px) {
+  .productsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chat {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  margin: 2rem auto;
+  background-color: rgb(0, 0, 0);
+  gap: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.messages {
+  width: 100%;
+  height: 100%;
+  color: wheat;
+  font-style: italic;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.infoUser {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.messageChat {
+  margin-bottom: 0.8rem;
+}
+
+.email,
+.date,
+.message {
+  font-family: monospace;
+  font-size: 12px;
+}
+.email {
+  color: rgb(99, 99, 202);
+  font-style: normal;
+}
+.date {
+  font-style: normal;
+  color: chocolate;
+}
+
+.welcomeMessagecontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.welcomeMessageChat {
+  color: wheat;
+  font-size: 10px;
+  font-family: monospace;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.messageText {
+  color: wheat;
+  font-size: 14px;
+  padding: 0.2rem 0;
+}
+
+.emailUser,
+.messageUser,
+.userName,
+.userLastName,
+.userAge,
+.userAlias,
+.userAvatar {
+  background: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: solid white 1px;
+  color: white;
+  caret-color: aliceblue;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.alert {
+  border-color: red;
+}
+.btn-percent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.percentageValue {
+  color: #f7eddb;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 1rem;
+  font-family: monospace;
+  font-size: 12px;
+}
+.percentageValue > span {
+  display: block;
+}
+
+.btnSendMessage {
+  width: 4rem;
+  font-family: monospace;
+  padding: 0.3rem 0;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .productsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chat {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .emailUser,
+  .messageUser,
+  .userName,
+  .userLastName,
+  .userAge,
+  .userAlias,
+  .userAvatar {
+    width: 100%;
+  }
+
+  .messages {
+    overflow-x: hidden;
+  }
+}

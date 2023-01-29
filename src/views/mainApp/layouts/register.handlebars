@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link
+      rel='stylesheet'
+      type='text/css'
+      href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css'
+    />
+    <link rel='stylesheet' href='/register/css/register.css' />
+    <title>API Ecommerce Register</title>
+  </head>
+  <body>
+    <video autoplay muted loop class='video-background-register'>
+      <source src='/login/assets/video.mp4' type='video/mp4' />
+    </video>
+    <section class='register-section'>
+      <form class='register-form'>
+        <input type='email' placeholder='email' id='emailInput' autocomplete='off' />
+        <input type='text' placeholder='Username' id='usernameInput' autocomplete='off' />
+        <input type='text' placeholder='Address' id='addressInput' autocomplete='off' />
+        <input type='text' placeholder='Age' id='ageInput' autocomplete='off' />
+        <input type='text' placeholder='Phone' id='phoneInput' autocomplete='off' />
+        <input type='password' placeholder='Password' id='passwordInput' />
+        <input type='password' placeholder='Confirm the password' id='passwordConfirmInput' />
+        {{! <select name='role' id='role'>
+          <option value='user'>User</option>
+          <option value='admin'>Admin</option>
+        </select> }}
+        <label for='image' class='labelFileBtn'>Choose your avatar</label>
+        <input type='file' name='image' id='image' hidden />
+        <button id='signupBtn'>Sign up</button>
+        <p class='signin'>Go back and
+          <span id='signin-btn' class='signinBtn'>Log in</span></p>
+      </form>
+    </section>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js'></script>
+    <script src='/register/js/register.js' type='module'></script>
+  </body>
+</html>

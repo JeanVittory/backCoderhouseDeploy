@@ -1,0 +1,26 @@
+<article class='table'>
+  <div class='table-title'>Your Products</div>
+  <div class='table-header-row'>
+    <div class='table-header-cells'></div>
+    <div class='table-header-cells'>Product</div>
+    <div class='table-header-cells'>Price</div>
+    <div class='table-header-cells'>Photo</div>
+  </div>
+  {{#if dataWithThumbnailFixed}}
+    <div class='table-body'>
+      {{#each dataWithThumbnailFixed}}
+        <div class='table-row'>
+          <div class='table-cell'><input type="checkbox" id="idRetriever" name="select" value={{this.id}}></div>
+          <div class='table-cell'>{{this.productName}}</div>
+          <div class='table-cell'>{{this.price}}</div>
+          <div class='table-cell-image'>
+            <img class="img-product" src= "/mainApp/images/{{this.thumbnail}}"></img> 
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</article>
+{{#if isEmpty}}
+  <div class='table-row-empty-message'>Your product list is empty!</div>
+{{/if}}

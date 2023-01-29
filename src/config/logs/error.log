@@ -1,0 +1,140 @@
+14-11-2022 T 05:27:02 [error]: Error 409. The email or the username already exist, please use another. 
+14-11-2022 T 09:42:51 [error]: Error 409. ivalid role 
+14-11-2022 T 09:43:58 [error]: Error 409. invalid role 
+14-11-2022 T 09:44:52 [error]: Error 409. invalid role 
+14-11-2022 T 09:47:26 [error]: Error 409. invalid role 
+14-11-2022 T 09:49:49 [error]: Error 409. The email or the username already exist, please use another. 
+17-11-2022 T 08:51:34 [error]: 404. Product doesn't exist 
+17-11-2022 T 09:56:03 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+17-11-2022 T 09:57:48 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+17-11-2022 T 10:05:27 [error]: 404.Product doesn't exist 
+17-11-2022 T 10:08:10 [error]: 404.Product doesn't exist 
+17-11-2022 T 10:08:37 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+17-11-2022 T 10:13:42 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+17-11-2022 T 10:15:16 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+18-11-2022 T 11:35:38 [error]: 400.Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+20-11-2022 T 04:28:34 [error]: Error 409. The email or the username already exist, please use another. 
+20-11-2022 T 04:30:01 [error]: Error 409. The email or the username already exist, please use another. 
+20-11-2022 T 04:31:59 [error]: Error 409. The email or the username already exist, please use another. 
+29-11-2022 T 05:40:57 [error]: Error 500. ProductService.getAll is not a function 
+29-11-2022 T 05:43:39 [error]: Error 500. ProductService.getAll is not a function 
+29-11-2022 T 05:55:35 [error]: Error 500. serviceProductDB.productRetrieved is not a function 
+29-11-2022 T 05:58:13 [error]: Error 400. Ingrese una imágen del producto 
+29-11-2022 T 05:58:13 [error]: Error 500. Error 400. Debe ingresar una imágen del producto 
+29-11-2022 T 05:58:39 [error]: Error 400. Ingrese una imágen del producto 
+29-11-2022 T 05:58:39 [error]: Error 500. Error 400. Debe ingresar una imágen del producto 
+29-11-2022 T 06:03:01 [error]: Error 500. CartService.getById is not a function 
+29-11-2022 T 06:06:26 [error]: Error 500. CartService.getById is not a function 
+29-11-2022 T 06:07:30 [error]: Error 500. serviceCartDB.GetById is not a function 
+29-11-2022 T 06:10:04 [error]: Error 500. deleteProductFromCart is not defined 
+29-11-2022 T 08:12:54 [error]: Error 400. Ingrese una imágen del producto 
+29-11-2022 T 08:12:54 [error]: Error 500. Error 400. Debe ingresar una imágen del producto 
+29-11-2022 T 08:13:06 [error]: Error 400. Ingrese una imágen del producto 
+29-11-2022 T 08:13:06 [error]: Error 500. Error 400. Debe ingresar una imágen del producto 
+29-11-2022 T 08:49:51 [error]: Error 500. Cannot destructure property '_id' of 'undefined' as it is undefined. 
+29-11-2022 T 08:50:24 [error]: Error 500. Cannot destructure property '_id' of 'undefined' as it is undefined. 
+29-11-2022 T 08:53:00 [error]: Error 500. CartService.deleteById is not a function 
+09-12-2022 T 07:04:45 [error]: Error 500. res.status(...).jason is not a function 
+09-12-2022 T 07:05:08 [error]: Error 500. Cannot set headers after they are sent to the client 
+09-12-2022 T 07:05:54 [error]: Error 500. Cannot set headers after they are sent to the client 
+09-12-2022 T 09:32:26 [error]: Error 500. Cannot destructure property '_id' of 'object null' as it is null. 
+09-12-2022 T 09:33:36 [error]: Error 500. Cannot destructure property '_id' of 'object null' as it is null. 
+09-12-2022 T 11:44:01 [error]: Error 500. Invalid status code: undefined 
+10-12-2022 T 12:53:52 [error]: Error 400. Enter a product image 
+10-12-2022 T 12:53:52 [error]: Error 500. Cannot read properties of undefined (reading 'originalname') 
+10-12-2022 T 12:55:03 [error]: Error 400. Enter a product image 
+10-12-2022 T 12:55:03 [error]: Error 500. Cannot read properties of undefined (reading 'originalname') 
+10-12-2022 T 12:56:22 [error]: Error 400. Enter a product image 
+10-12-2022 T 12:56:22 [error]: Error 500. Cannot read properties of undefined (reading 'originalname') 
+10-12-2022 T 01:03:05 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 01:05:54 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 01:05:54 [error]: undefined. products validation failed: productName: Path `productName` is required., price: Path `price` is required. 
+10-12-2022 T 01:05:54 [error]: Error 500. Cannot set headers after they are sent to the client 
+10-12-2022 T 01:06:59 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 04:21:36 [error]: Error 400. Enter a product image 
+10-12-2022 T 04:21:36 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 04:22:25 [error]: Error 400. Enter a product image 
+10-12-2022 T 04:22:25 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 04:49:44 [error]: Error 400. Enter a product image 
+10-12-2022 T 04:49:44 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 05:00:54 [error]: Error 400. Enter a product image 
+10-12-2022 T 05:00:54 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 05:55:31 [error]: Error 400. please provide a product id 
+10-12-2022 T 06:03:46 [error]: Error 400. please provide a product id 
+10-12-2022 T 06:03:46 [error]: Error 400. Por favor ingresa un valor a ser actualizado 
+10-12-2022 T 06:57:42 [error]: Error 400. Enter a product image 
+10-12-2022 T 06:57:42 [error]: You must enter the name of the product and its respective price 
+10-12-2022 T 06:57:44 [error]: Error 400. please provide a product id 
+10-12-2022 T 06:57:44 [error]: Error 400. Por favor ingresa un valor a ser actualizado 
+10-12-2022 T 07:14:34 [error]: Error 400. please provide a product id 
+10-12-2022 T 07:19:36 [error]: 404. Product doesn't exist 
+10-12-2022 T 07:20:08 [error]: Error 400. please provide a product id 
+10-12-2022 T 07:20:09 [error]: 404. Product doesn't exist 
+12-12-2022 T 06:26:37 [error]: undefined. addDocument.setImage is not a function 
+12-12-2022 T 06:28:30 [error]: undefined. addDocument.setImage is not a function 
+12-12-2022 T 06:29:40 [error]: undefined. addDocument.setImage is not a function 
+12-12-2022 T 06:30:32 [error]: undefined. this.collection.setImage is not a function 
+12-12-2022 T 06:32:17 [error]: undefined. this.collection.setImage is not a function 
+12-12-2022 T 06:36:17 [error]: Error 500. APP_HOST is not defined 
+12-12-2022 T 06:36:58 [error]: Error 500. APP_HOST is not defined 
+12-12-2022 T 06:37:03 [error]: Error 500. APP_HOST is not defined 
+12-12-2022 T 09:41:49 [error]: Error 400. Enter a product image 
+14-12-2022 T 10:07:07 [error]: Error 400. please provide a product id 
+14-12-2022 T 10:07:35 [error]: Error 500. Cannot read properties of undefined (reading '_id') 
+14-12-2022 T 10:16:01 [error]: 400. Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+14-12-2022 T 10:16:35 [error]: 400. Invalid ID product, mongo only accept 12 bytes, a string of 24 hex characters or an integer id value 
+14-12-2022 T 10:18:37 [error]: undefined. Cannot destructure property '_id' of 'undefined' as it is undefined. 
+14-12-2022 T 10:28:48 [error]: Error 500. Cannot read properties of undefined (reading 'id') 
+14-12-2022 T 10:29:21 [error]: Error 500. Cannot read properties of undefined (reading 'id') 
+14-12-2022 T 10:33:29 [error]: 404. The product doesn't exist in database 
+15-12-2022 T 12:01:35 [error]: 404. The product doesn't exist in database 
+15-12-2022 T 12:04:59 [error]: 404. The product doesn't exist in database 
+15-12-2022 T 12:05:07 [error]: 404. The product doesn't exist in database 
+15-12-2022 T 06:56:14 [error]: Error 400. Enter a product image 
+15-12-2022 T 07:08:49 [error]: Error 500. Invalid status code: undefined 
+15-12-2022 T 07:24:48 [error]: 404.The cart don't exist in the database 
+15-12-2022 T 07:25:00 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 07:58:19 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 07:58:32 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 07:58:46 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 08:02:00 [error]: Error 500. responseFromDeleteCart is not defined 
+15-12-2022 T 08:03:59 [error]: Error 500. responseFromDeleteCart is not defined 
+15-12-2022 T 08:05:31 [error]: 404.The cart is empty 
+15-12-2022 T 08:12:52 [error]: 404.The product doesn't exist in your cart 
+15-12-2022 T 08:13:04 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 08:14:28 [error]: 404.The product doesn't exist in your cart 
+15-12-2022 T 08:15:26 [error]: 404.The product doesn't exist in your cart 
+15-12-2022 T 08:15:42 [error]: 404.The product doesn't exist in database 
+15-12-2022 T 08:17:28 [error]: 404.The product or cart doesn't exist in database 
+15-12-2022 T 08:32:40 [error]: 404. The product or cart doesn't exist in database 
+15-12-2022 T 09:48:48 [error]: 404.Product doesn't exist 
+15-12-2022 T 09:50:29 [error]: 404.Product doesn't exist 
+15-12-2022 T 09:52:48 [error]: 404.Product doesn't exist 
+15-12-2022 T 09:53:32 [error]: 404.Product doesn't exist 
+15-12-2022 T 09:55:09 [error]: 404.Product doesn't exist 
+15-12-2022 T 10:40:00 [error]: 404.The product doesn't exist in your cart 
+17-12-2022 T 04:41:47 [error]: Error 409. The email or the username already exist, please use another. 
+17-12-2022 T 04:44:02 [error]: Error 409. The email or the username already exist, please use another. 
+17-12-2022 T 04:50:12 [error]: Error 409. The email or the username already exist, please use another. 
+17-12-2022 T 04:51:42 [error]: Error 409. The email or the username already exist, please use another. 
+08-01-2023 T 01:03:15 [error]: 404.Product doesn't exist 
+12-01-2023 T 03:40:54 [error]: Error 400. Enter a product image 
+12-01-2023 T 03:42:48 [error]: undefined. products validation failed: category: `t-shirt` is not a valid enum value for path `category`. 
+12-01-2023 T 03:46:00 [error]: undefined. products validation failed: category: t-shirt is not a category available. 
+12-01-2023 T 04:41:26 [error]: undefined. products validation failed: category: t-shirt is not a category available. 
+12-01-2023 T 04:41:34 [error]: undefined. E11000 duplicate key error collection: ecommerce.products index: productName_1 dup key: { productName: "Camiseta XL" } 
+12-01-2023 T 10:24:50 [error]: undefined. products validation failed: category: t-shirts is not a category available. 
+12-01-2023 T 10:27:49 [error]: undefined. products validation failed: thumbnail: Path `thumbnail` is required. 
+25-01-2023 T 04:15:44 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 04:17:27 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 04:18:51 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 04:21:22 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 04:28:34 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 05:10:18 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 05:12:08 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 05:13:15 [error]: Error 500. Cannot set headers after they are sent to the client 
+25-01-2023 T 05:37:05 [error]: Error 400. Enter a product image 
+26-01-2023 T 07:03:22 [error]: Error 500. Something went Wrong with server 
+26-01-2023 T 07:09:29 [error]: Error 500. Something went Wrong with server 
+26-01-2023 T 07:23:20 [error]: Error 500. Something went Wrong with server 
+29-01-2023 T 04:20:49 [error]: OrderService.addOrder is not a function 
