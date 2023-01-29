@@ -16,7 +16,13 @@ const typeMessage = document.querySelector('#type');
 const btnSendChatMessage = document.querySelector('#btnSendChatMessage');
 const messagesContainer = document.querySelector('#messages');
 const percentageReduction = document.querySelector('#percentageReduction');
+const origin1 = window.location.origin;
 const origin = window.location.origin;
+const origin2 = window.location.host;
+const origin3 = window.location.href;
+console.log('origin', origin1);
+console.log('host', origin2);
+console.log('href', origin3);
 
 const socket = io({
 	autoConnect: false,
