@@ -421,3 +421,34 @@
 29-01-2023 T 07:03:26 [warn]: Error 404. Route not found 
 29-01-2023 T 07:04:22 [warn]: Error 404. Route not found 
 29-01-2023 T 08:03:45 [warn]: Error 404. Route not found 
+29-01-2023 T 08:49:26 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:27 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:27 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:27 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:29 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:29 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:29 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:49:29 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:50:02 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:50:02 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:50:02 [error]: Error 409. The email or the username already exist, please use another. 
+29-01-2023 T 08:52:27 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:52:36 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:53:19 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:53:19 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:53:19 [error]: Error 409. The email or the username already exist, please use another. 
+29-01-2023 T 08:55:27 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:55:28 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:55:28 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:55:28 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:55:59 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:56:00 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:56:00 [error]: Error 409. The email or the username already exist, please use another. 
+29-01-2023 T 08:57:23 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:24 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:24 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:25 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:50 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:50 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:51 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
+29-01-2023 T 08:57:51 [error]: Cannot destructure property '_id' of 'object null' as it is null. 
