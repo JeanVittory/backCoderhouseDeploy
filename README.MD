@@ -161,9 +161,9 @@ https://backcoderhousedeploy-production.up.railway.app/
 
 username: admin <br> password: 12
 
-in this mode you will have the option to add, delete and uodate products in case you want buy
-something you have to login as a user but first you will have to register in login UI filling the
-form with your data, then you will goin to be redirect to the user UI and there you will have the
-options to buy a product added in as a admin
+in this mode you will have the option to add, delete and update products. <br> in case that you want
+buy something you will have to login as a user but first you will have to register in login UI
+filling the form with your data, then you will going to be redirect to the user interface and there
+you will have the options to buy a product added as an admin
 
 You can find other starter scripts modes in the package.json file
