@@ -6,6 +6,9 @@ const initRedis = async () => {
 		const client = createClient({
 			host: process.env.NODE_ENV === 'production' ? env.REDISHOST : '127.0.0.1',
 			port: process.env.NODE_ENV === 'production' ? env.REDISPORT : 6379,
+			url: process.env.NODE_ENV === 'production' && env.REDIS_URL,
+			username: process.env.NODE_ENV === 'production' && env.REDISUSER,
+			password: process.env.NODE_ENV === 'production' && env.REDISPASSWORD,
 		});
 		client.on('error', (error) => console.log('Redis error: ', error));
 		await client.connect();
