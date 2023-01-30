@@ -49,4 +49,6 @@ export default {
 	JWT_SECRET: process.env.JWT_SECRET,
 	JWT_EXP_TIME: process.env.JWT_EXP_TIME,
 	APP_HOST_RAILWAY: process.env.APP_HOST_RAILWAY,
+	REDISHOST: process.env.APP_HOST_REDIS,
+	REDISPORT: process.env.APP_PORT_REDIS,
 };
