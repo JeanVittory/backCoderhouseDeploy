@@ -66,7 +66,7 @@ const logout = (req, res) => {
 			next(err);
 		}
 		res.clearCookie('token');
-		res.redirect(`${URL}/`);
+		res.redirect(`${URL}`);
 	});
 };
 
