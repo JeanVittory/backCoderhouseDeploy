@@ -11,7 +11,6 @@ const typeMessage = document.querySelector('#type');
 const messagesContainer = document.querySelector('#messages');
 const percentageReduction = document.querySelector('#percentageReduction');
 const origin = window.location.origin;
-const URL = 'https://backcoderhousedeploy-production.up.railway.app/';
 
 const socket = io({
 	autoConnect: false,
