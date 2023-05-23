@@ -1,6 +1,6 @@
 # API
 
-Api en construcción usando node y el framework Express. Mas allá de un sistema CRUD se ofrece una
+Api construida en node y Express. Mas allá de un sistema CRUD se ofrece una
 aplicación con integración a diferentes bases de datos relacionales y no relacionales como Maria db,
 Sqlite, Mongo y Firebase. Un chat contruido con Socket IO y un sistema de autenticación y de
 registro junto con el renderizado de dos vistas una en modo administrador y otra en modo usuario.
