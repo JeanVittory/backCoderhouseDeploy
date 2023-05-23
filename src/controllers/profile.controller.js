@@ -12,8 +12,6 @@ const URL =
 const getAdminProfile = (req, res) => {
 	logger.info(`accessing the route: ${req.baseUrl}`);
 	let token = req.cookies['token'];
-	//const authHeader = req.headers['authorization'];
-	//const token = authHeader && authHeader.split(' ')[1];
 	if (token === null) res.render('main', { layout: 'login' });
 	jwt.verify(token, env.JWT_SECRET, (err, token) => {
 		if (err) res.render('main', { layout: 'login' });
@@ -32,8 +30,6 @@ const getUserProfile = async (req, res) => {
 		avatar: urlAvatar.pathname,
 	};
 	const token = req.cookies['token'];
-	// const authHeader = req.headers['authorization'];
-	// const token = authHeader && authHeader.split(' ')[1];
 	if (token === null) res.render('main', { layout: 'login' });
 	jwt.verify(token, env.JWT_SECRET, (err, token) => {
 		if (err) res.render('main', { layout: 'login' });
