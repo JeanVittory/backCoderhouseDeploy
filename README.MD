@@ -147,13 +147,6 @@ To run test with mocha:
 pnpm run test
 ```
 
-## Deploy
-
-link:
-
-```sh
-https://backcoderhousedeploy-production.up.railway.app/
-```
 
 ## HOW TO USE?
 
